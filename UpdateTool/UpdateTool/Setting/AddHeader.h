@@ -10,5 +10,8 @@
 #define UpdateTool_AddHeader_h
 
     #import "BaseTableViewController.h"
-
+    #import "BluetoothMessageCenter.h"
+    #import <CoreBluetooth/CoreBluetooth.h>
+    #import "Setting.h"
+    #import "MainCell.h"
 #endif

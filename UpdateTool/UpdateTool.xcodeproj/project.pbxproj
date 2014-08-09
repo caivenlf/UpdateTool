@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310D11A21996000A000803BA /* OTAUpdateSys.m in Sources */ = {isa = PBXBuildFile; fileRef = 310D11A11996000A000803BA /* OTAUpdateSys.m */; };
 		3186AD451993B5AC005074FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3186AD441993B5AC005074FF /* Foundation.framework */; };
 		3186AD471993B5AC005074FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3186AD461993B5AC005074FF /* CoreGraphics.framework */; };
 		3186AD491993B5AC005074FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3186AD481993B5AC005074FF /* UIKit.framework */; };
@@ -25,6 +26,11 @@
 		31A84D1219946C3800CD4F45 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D1119946C3800CD4F45 /* BaseTableViewController.m */; };
 		31A84D1819947D8000CD4F45 /* ArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D1719947D8000CD4F45 /* ArrayDataSource.m */; };
 		31A84D1C19949BEE00CD4F45 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D1B19949BEE00CD4F45 /* BaseNavigationController.m */; };
+		31A84D1F1994A13700CD4F45 /* BleSelectCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D1E1994A13700CD4F45 /* BleSelectCtl.m */; };
+		31A84D2C1994D5F400CD4F45 /* PrintCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D2B1994D5F400CD4F45 /* PrintCtl.m */; };
+		31A84D2F1994F71800CD4F45 /* UpdateFileCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D2E1994F71800CD4F45 /* UpdateFileCtl.m */; };
+		31A84D321994FE9E00CD4F45 /* BluetoothMessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D311994FE9E00CD4F45 /* BluetoothMessageCenter.m */; };
+		31A84D3A19950FED00CD4F45 /* PeripheralSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D3919950FED00CD4F45 /* PeripheralSort.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		310D11A01996000A000803BA /* OTAUpdateSys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTAUpdateSys.h; sourceTree = "<group>"; };
+		310D11A11996000A000803BA /* OTAUpdateSys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTAUpdateSys.m; sourceTree = "<group>"; };
 		3186AD411993B5AC005074FF /* UpdateTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UpdateTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3186AD441993B5AC005074FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3186AD461993B5AC005074FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +74,17 @@
 		31A84D1719947D8000CD4F45 /* ArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayDataSource.m; sourceTree = "<group>"; };
 		31A84D1A19949BEE00CD4F45 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		31A84D1B19949BEE00CD4F45 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		31A84D1D1994A13700CD4F45 /* BleSelectCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleSelectCtl.h; sourceTree = "<group>"; };
+		31A84D1E1994A13700CD4F45 /* BleSelectCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleSelectCtl.m; sourceTree = "<group>"; };
+		31A84D2A1994D5F400CD4F45 /* PrintCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintCtl.h; sourceTree = "<group>"; };
+		31A84D2B1994D5F400CD4F45 /* PrintCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintCtl.m; sourceTree = "<group>"; };
+		31A84D2D1994F71800CD4F45 /* UpdateFileCtl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateFileCtl.h; sourceTree = "<group>"; };
+		31A84D2E1994F71800CD4F45 /* UpdateFileCtl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateFileCtl.m; sourceTree = "<group>"; };
+		31A84D301994FE9E00CD4F45 /* BluetoothMessageCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluetoothMessageCenter.h; path = UpdateTool/Model/BluetoothMessageCenter.h; sourceTree = SOURCE_ROOT; };
+		31A84D311994FE9E00CD4F45 /* BluetoothMessageCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BluetoothMessageCenter.m; path = UpdateTool/Model/BluetoothMessageCenter.m; sourceTree = SOURCE_ROOT; };
+		31A84D331994FF2100CD4F45 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
+		31A84D3819950FED00CD4F45 /* PeripheralSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralSort.h; sourceTree = "<group>"; };
+		31A84D3919950FED00CD4F45 /* PeripheralSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralSort.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +144,7 @@
 		3186AD4A1993B5AC005074FF /* UpdateTool */ = {
 			isa = PBXGroup;
 			children = (
+				31A84D3719950FE200CD4F45 /* Tools */,
 				31A84D0F19946C1200CD4F45 /* Base */,
 				31A84D1319946C5600CD4F45 /* Setting */,
 				31A84D151994795800CD4F45 /* Model */,
@@ -173,6 +193,12 @@
 			children = (
 				3186AD7A1993B658005074FF /* MainCtl.h */,
 				3186AD7B1993B658005074FF /* MainCtl.m */,
+				31A84D1D1994A13700CD4F45 /* BleSelectCtl.h */,
+				31A84D1E1994A13700CD4F45 /* BleSelectCtl.m */,
+				31A84D2A1994D5F400CD4F45 /* PrintCtl.h */,
+				31A84D2B1994D5F400CD4F45 /* PrintCtl.m */,
+				31A84D2D1994F71800CD4F45 /* UpdateFileCtl.h */,
+				31A84D2E1994F71800CD4F45 /* UpdateFileCtl.m */,
 			);
 			path = Controllsers;
 			sourceTree = "<group>";
@@ -201,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				31A84D1419946C6A00CD4F45 /* AddHeader.h */,
+				31A84D331994FF2100CD4F45 /* Setting.h */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -208,10 +235,31 @@
 		31A84D151994795800CD4F45 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31A84D201994C70A00CD4F45 /* BLE */,
 				31A84D1619947D8000CD4F45 /* ArrayDataSource.h */,
 				31A84D1719947D8000CD4F45 /* ArrayDataSource.m */,
+				310D11A01996000A000803BA /* OTAUpdateSys.h */,
+				310D11A11996000A000803BA /* OTAUpdateSys.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		31A84D201994C70A00CD4F45 /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				31A84D301994FE9E00CD4F45 /* BluetoothMessageCenter.h */,
+				31A84D311994FE9E00CD4F45 /* BluetoothMessageCenter.m */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		31A84D3719950FE200CD4F45 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				31A84D3819950FED00CD4F45 /* PeripheralSort.h */,
+				31A84D3919950FED00CD4F45 /* PeripheralSort.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,12 +360,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				31A84D1819947D8000CD4F45 /* ArrayDataSource.m in Sources */,
+				310D11A21996000A000803BA /* OTAUpdateSys.m in Sources */,
 				31A84D1C19949BEE00CD4F45 /* BaseNavigationController.m in Sources */,
+				31A84D321994FE9E00CD4F45 /* BluetoothMessageCenter.m in Sources */,
 				3186AD551993B5AC005074FF /* AppDelegate.m in Sources */,
 				3186AD7C1993B658005074FF /* MainCtl.m in Sources */,
 				3186AD511993B5AC005074FF /* main.m in Sources */,
 				3186AD801993B99E005074FF /* MainCell.m in Sources */,
 				31A84D1219946C3800CD4F45 /* BaseTableViewController.m in Sources */,
+				31A84D2F1994F71800CD4F45 /* UpdateFileCtl.m in Sources */,
+				31A84D2C1994D5F400CD4F45 /* PrintCtl.m in Sources */,
+				31A84D1F1994A13700CD4F45 /* BleSelectCtl.m in Sources */,
+				31A84D3A19950FED00CD4F45 /* PeripheralSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

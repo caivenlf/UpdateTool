@@ -31,7 +31,7 @@
 {
     [super viewDidLoad];
     
-    dataSourceArray = [[ArrayDataSource alloc] initWithItems:@[@"蓝牙连接",@"2",@"3",@"4",@"5"] cellIdentifier:@"MainCell" configureCellBlock:^(id cell, id item) {
+    dataSourceArray = [[ArrayDataSource alloc] initWithItems:@[@"蓝牙连接",@"打印信息",@"固件升级"] cellIdentifier:@"MainCell" configureCellBlock:^(id cell, id item) {
         [(MainCell*)cell titleLabel].text = item;
     }];
 }
@@ -48,6 +48,10 @@
     return 1;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 60.0;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [dataSourceArray tableView:self.tableView numberOfRowsInSection:0];
@@ -59,9 +63,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0) {
-        [self performSegueWithIdentifier:@"BleConnectIden" sender:nil];
-    }
+    NSArray *ctlIden = @[@"BleConnectIden",@"MonitoringReportIden",@"UpdateFileIden"];
+    [self performSegueWithIdentifier:[ctlIden objectAtIndex:indexPath.row] sender:nil];
 }
 
 

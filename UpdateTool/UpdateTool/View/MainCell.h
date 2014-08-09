@@ -11,6 +11,9 @@
 @interface MainCell : UITableViewCell
 
 
+@property (weak, nonatomic) IBOutlet UILabel *rssiLabel;
+@property (weak, nonatomic) IBOutlet UILabel *bleNameLabel;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end
