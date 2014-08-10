@@ -33,8 +33,6 @@
 
 
 #import "BluetoothMessageCenter.h"
-
-
 typedef struct __attribute__((packed))
 {
     uint8_t opcode;
@@ -223,13 +221,10 @@ typedef struct __attribute__((packed))
 		
 		[bleTableDelegate scanningStart];
 	}
-
 }
 
 - (void) scanningForDevice
 {
-	
-	
 	NSArray			*uuidArray	= [NSArray arrayWithObjects:[CBUUID UUIDWithString:kServiceUUIDString],serviceOfOTA, nil];
 	
 	NSDictionary	*options	= [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:NO] forKey:CBCentralManagerScanOptionAllowDuplicatesKey];
@@ -301,7 +296,6 @@ typedef struct __attribute__((packed))
 	currentConnectPeripheral = peripheral;
 	
 	[centralManager connectPeripheral:peripheral options:nil];
-	
 }
 
 
@@ -591,7 +585,6 @@ typedef struct __attribute__((packed))
 			readCharacteristic = characteristic;
 	
 			[currentConnectPeripheral setNotifyValue:YES forCharacteristic:readCharacteristic];
-            
             isConnectedSuccess = YES;
 		}else if ([characteristic.UUID isEqual:controlPointCharacteristicUUID])
         {
@@ -730,18 +723,6 @@ typedef struct __attribute__((packed))
     }
 }
 
-
-
-
-/*
- ===========================================================================
- 
- 
- 
- ===========================================================================
- */
-
-
 -(void)disconnect{
 	
 	if(currentConnectPeripheral){
@@ -749,9 +730,7 @@ typedef struct __attribute__((packed))
 		[centralManager cancelPeripheralConnection:currentConnectPeripheral];
 	}else{
 		
-		
 	}
-	
 }
 
 -(void)writeData:(NSData *)data{

@@ -31,6 +31,10 @@
 		31A84D2F1994F71800CD4F45 /* UpdateFileCtl.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D2E1994F71800CD4F45 /* UpdateFileCtl.m */; };
 		31A84D321994FE9E00CD4F45 /* BluetoothMessageCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D311994FE9E00CD4F45 /* BluetoothMessageCenter.m */; };
 		31A84D3A19950FED00CD4F45 /* PeripheralSort.m in Sources */ = {isa = PBXBuildFile; fileRef = 31A84D3919950FED00CD4F45 /* PeripheralSort.m */; };
+		AF7726F7199760A400DBE299 /* BleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7726F6199760A400DBE299 /* BleManager.m */; };
+		AF7726FC1997CA7A00DBE299 /* ServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7726FB1997CA7A00DBE299 /* ServicesManager.m */; };
+		AF7726FE1997CB8400DBE299 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF7726FD1997CB8400DBE299 /* CoreBluetooth.framework */; };
+		AF7727011997DA3E00DBE299 /* BleConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = AF7727001997DA3E00DBE299 /* BleConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +89,14 @@
 		31A84D331994FF2100CD4F45 /* Setting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setting.h; sourceTree = "<group>"; };
 		31A84D3819950FED00CD4F45 /* PeripheralSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralSort.h; sourceTree = "<group>"; };
 		31A84D3919950FED00CD4F45 /* PeripheralSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralSort.m; sourceTree = "<group>"; };
+		AF7726F5199760A400DBE299 /* BleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleManager.h; sourceTree = "<group>"; };
+		AF7726F6199760A400DBE299 /* BleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleManager.m; sourceTree = "<group>"; };
+		AF7726F9199761A900DBE299 /* BleServicesAndCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleServicesAndCharacteristics.h; sourceTree = "<group>"; };
+		AF7726FA1997CA7A00DBE299 /* ServicesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesManager.h; sourceTree = "<group>"; };
+		AF7726FB1997CA7A00DBE299 /* ServicesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesManager.m; sourceTree = "<group>"; };
+		AF7726FD1997CB8400DBE299 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		AF7726FF1997DA3E00DBE299 /* BleConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleConfig.h; sourceTree = "<group>"; };
+		AF7727001997DA3E00DBE299 /* BleConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF7726FE1997CB8400DBE299 /* CoreBluetooth.framework in Frameworks */,
 				3186AD471993B5AC005074FF /* CoreGraphics.framework in Frameworks */,
 				3186AD491993B5AC005074FF /* UIKit.framework in Frameworks */,
 				3186AD451993B5AC005074FF /* Foundation.framework in Frameworks */,
@@ -133,6 +146,7 @@
 		3186AD431993B5AC005074FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF7726FD1997CB8400DBE299 /* CoreBluetooth.framework */,
 				3186AD441993B5AC005074FF /* Foundation.framework */,
 				3186AD461993B5AC005074FF /* CoreGraphics.framework */,
 				3186AD481993B5AC005074FF /* UIKit.framework */,
@@ -235,6 +249,7 @@
 		31A84D151994795800CD4F45 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AF7726F41997604600DBE299 /* NewBle */,
 				31A84D201994C70A00CD4F45 /* BLE */,
 				31A84D1619947D8000CD4F45 /* ArrayDataSource.h */,
 				31A84D1719947D8000CD4F45 /* ArrayDataSource.m */,
@@ -260,6 +275,20 @@
 				31A84D3919950FED00CD4F45 /* PeripheralSort.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		AF7726F41997604600DBE299 /* NewBle */ = {
+			isa = PBXGroup;
+			children = (
+				AF7726F5199760A400DBE299 /* BleManager.h */,
+				AF7726F6199760A400DBE299 /* BleManager.m */,
+				AF7726FA1997CA7A00DBE299 /* ServicesManager.h */,
+				AF7726FB1997CA7A00DBE299 /* ServicesManager.m */,
+				AF7726FF1997DA3E00DBE299 /* BleConfig.h */,
+				AF7727001997DA3E00DBE299 /* BleConfig.m */,
+				AF7726F9199761A900DBE299 /* BleServicesAndCharacteristics.h */,
+			);
+			path = NewBle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,14 +393,17 @@
 				31A84D1C19949BEE00CD4F45 /* BaseNavigationController.m in Sources */,
 				31A84D321994FE9E00CD4F45 /* BluetoothMessageCenter.m in Sources */,
 				3186AD551993B5AC005074FF /* AppDelegate.m in Sources */,
+				AF7726F7199760A400DBE299 /* BleManager.m in Sources */,
 				3186AD7C1993B658005074FF /* MainCtl.m in Sources */,
 				3186AD511993B5AC005074FF /* main.m in Sources */,
 				3186AD801993B99E005074FF /* MainCell.m in Sources */,
 				31A84D1219946C3800CD4F45 /* BaseTableViewController.m in Sources */,
 				31A84D2F1994F71800CD4F45 /* UpdateFileCtl.m in Sources */,
+				AF7726FC1997CA7A00DBE299 /* ServicesManager.m in Sources */,
 				31A84D2C1994D5F400CD4F45 /* PrintCtl.m in Sources */,
 				31A84D1F1994A13700CD4F45 /* BleSelectCtl.m in Sources */,
 				31A84D3A19950FED00CD4F45 /* PeripheralSort.m in Sources */,
+				AF7727011997DA3E00DBE299 /* BleConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
