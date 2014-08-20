@@ -6,6 +6,10 @@
 //  Copyright (c) 2014年 Vicent. All rights reserved.
 //
 
+
+/**
+    @para
+ */
 #import "UpdateFileCtl.h"
 #import "OTAUpdateSys.h"
 
