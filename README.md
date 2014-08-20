@@ -1,4 +1,4 @@
 UpdateTool
 ==========
 
-Update Watch profile
+Update Watch profile/New
