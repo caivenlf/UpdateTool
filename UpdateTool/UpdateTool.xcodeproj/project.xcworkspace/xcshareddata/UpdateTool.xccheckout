@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>80DDC936-A4DE-47DB-8D2A-E8A11DDB3DE3</string>
+	<key>IDESourceControlProjectName</key>
+	<string>UpdateTool</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F430A96F-0339-470A-82C2-B24BEC90DC80</key>
+		<string>https://github.com/caivenlf/UpdateTool.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>UpdateTool/UpdateTool.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F430A96F-0339-470A-82C2-B24BEC90DC80</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/caivenlf/UpdateTool.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F430A96F-0339-470A-82C2-B24BEC90DC80</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F430A96F-0339-470A-82C2-B24BEC90DC80</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UpdateTool</string>
+		</dict>
+	</array>
+</dict>
+</plist>
